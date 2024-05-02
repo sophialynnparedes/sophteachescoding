@@ -1,0 +1,40 @@
+.button {
+    background-image: linear-gradient(to bottom right, var(--darkpurple), var(--purple));
+    border: 0;
+    border-radius: 14px;
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.5);
+    min-width: 10%;
+    cursor: pointer;
+    padding: 4px;
+    text-align: center;
+    color: var(--black);
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.button p{
+    font-family: var(--font3);
+    font-size: 24px;
+}
+
+.button:hover {
+    background-image: linear-gradient(to bottom right, var(--purple), var(--pink));
+}
+
+.button:active {
+    box-shadow: 0px 0px black;
+    transition: linear 0.05s;
+}
+
+.button:disabled {
+    background-image: none;
+    background-color: var(--grey);
+    color: var(--black);
+}
+
+#selected.button {
+    background-image: none;
+    background-color: var(--hotpink);
+    box-shadow: none;
+}
+
