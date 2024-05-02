@@ -25,7 +25,7 @@ export default function Button(props) {
     );
   } else if (props.image) {
     return (
-      <button className="imageButton" onClick={props.method}>
+      <button id={props.id} className="imageButton" onClick={props.method}>
         <img src={props.image} />
         <p>{props.label}</p>
       </button>

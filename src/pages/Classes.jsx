@@ -27,6 +27,7 @@ export default function Classes(props) {
               window.open("http://arcade.makecode.com", "_blank");
             }}
           />
+          <br />
           <ul>
             <li>
               This course is designed for students that want to dip their toes
@@ -81,9 +82,24 @@ export default function Classes(props) {
           <Button
             label="Check out my Intro to Coding class!"
             method={() => {
-              window.open("http://introtocoding.onrender.com", "_blank");
+              window.open(
+                "http://introtocodingarchived.onrender.com",
+                "_blank"
+              );
             }}
           />
+        </>
+      );
+    } else if (chosen == 2) {
+      return (
+        <>
+          <Title subtitle="AP Computer Science Principles" />
+        </>
+      );
+    } else if (chosen == 3) {
+      return (
+        <>
+          <Title subtitle="AP Computer Science A" />
         </>
       );
     }
@@ -99,7 +115,6 @@ export default function Classes(props) {
         <Col align="center" width="45%">
           <Button
             image="itc.png"
-            href="/itc"
             label="Intro to Coding"
             method={() => {
               setChosen(1);
@@ -107,10 +122,18 @@ export default function Classes(props) {
           />
           <Button
             image="itc.png"
-            href="/itc"
             label="AP Computer Science Principles"
+            method={() => {
+              setChosen(2);
+            }}
           />
-          <Button image="itc.png" href="/itc" label="AP Computer Science A" />
+          <Button
+            image="itc.png"
+            label="AP Computer Science A"
+            method={() => {
+              setChosen(3);
+            }}
+          />
         </Col>
         <Col align="center" width="45%">
           <Class />

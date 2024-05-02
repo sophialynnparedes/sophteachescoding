@@ -12,6 +12,12 @@
     margin-bottom:10px;
 }
 
+#icon.imageButton{
+    aspect-ratio: 1/1;
+    width: 150px;
+
+}
+
 .imageButton img{
     position: absolute;
     width: 100%;
