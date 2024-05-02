@@ -2,8 +2,11 @@ import Row from "../components/Row";
 import Col from "../components/Col";
 import Title from "../components/Title";
 import Button from "../components/Button";
+import { useState } from "react";
 
 export default function Tutorials() {
+  const [topic, setTopic] = useState(0);
+
   return (
     <>
       <Row align="center">

@@ -3,7 +3,7 @@ import Content from "../components/Content";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import Title from "../components/Title";
-import { useState } from "react";
+import { useState, Fragment } from "react";
 
 export default function Classes(props) {
   const [chosen, setChosen] = useState(0);
@@ -113,27 +113,29 @@ export default function Classes(props) {
       />
       <Row align="spaced">
         <Col align="center" width="45%">
-          <Button
-            image="itc.png"
-            label="Intro to Coding"
-            method={() => {
-              setChosen(1);
-            }}
-          />
-          <Button
-            image="itc.png"
-            label="AP Computer Science Principles"
-            method={() => {
-              setChosen(2);
-            }}
-          />
-          <Button
-            image="itc.png"
-            label="AP Computer Science A"
-            method={() => {
-              setChosen(3);
-            }}
-          />
+          <div className="blur">
+            <Button
+              image="itc.png"
+              label="Intro to Coding"
+              method={() => {
+                setChosen(1);
+              }}
+            />
+            <Button
+              image="itc.png"
+              label="AP Computer Science Principles"
+              method={() => {
+                setChosen(2);
+              }}
+            />
+            <Button
+              image="itc.png"
+              label="AP Computer Science A"
+              method={() => {
+                setChosen(3);
+              }}
+            />
+          </div>
         </Col>
         <Col align="center" width="45%">
           <Class />

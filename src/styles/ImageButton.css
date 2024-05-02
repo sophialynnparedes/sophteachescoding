@@ -15,8 +15,33 @@
 #icon.imageButton{
     aspect-ratio: 1/1;
     width: 150px;
-
 }
+
+.blur{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 100%;
+}
+
+.blur .imageButton:hover{
+    transform: scale(1.1, 1.1);
+    transition: linear 0.2s;
+    
+}
+
+.blur:hover > .imageButton:not(:hover){
+    filter: blur(10px);
+    transform: scale(0.9,0.9);
+    transition: linear 2s;
+}
+
+
+
+
+
+
 
 .imageButton img{
     position: absolute;
