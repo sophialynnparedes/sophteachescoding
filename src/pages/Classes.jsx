@@ -20,7 +20,7 @@ export default function Classes(props) {
               two-dimensional arcade games using:
             </li>
           </ul>
-          <br />
+
           <Button
             label="Microsoft MakeCode Arcade"
             method={() => {
@@ -33,12 +33,12 @@ export default function Classes(props) {
               into computer programming to see if it is something that they like
               and may want to pursue further.{" "}
             </li>
-            <br />
+
             <li>
               Students progress through five units, each focusing on a different
               genre or component of video games:
             </li>
-            <br />
+
             <ul>
               <li>
                 <b>Unit 1: Sprite Story</b> has students learning the basics of
@@ -47,7 +47,7 @@ export default function Classes(props) {
                 programs function. Students will make a program that resembles a
                 short story or cutscene in a video game.
               </li>
-              <br />
+
               <li>
                 <b>Unit 2: Scroller Game</b> has students learning about event
                 handlers (also sometimes referred to as event listeners) to
@@ -56,7 +56,7 @@ export default function Classes(props) {
                 perform operations on these variables to create methods of
                 winning and losing in the game.
               </li>
-              <br />
+
               <li>
                 <b>Unit 3: Platformer Game</b> has students learning about
                 iterations, loops that repeat similar code, and selection,
@@ -64,13 +64,13 @@ export default function Classes(props) {
                 conditions. Students begin to learn about abstraction through
                 using arrays (lists) and functions to simplify complex programs.
               </li>
-              <br />
+
               <li>
                 <b>Unit 4: Adventure Game</b> has students applying their
                 knowledge and skills to design and develop an adventure game to
                 meet certain criteria.
               </li>
-              <br />
+
               <li>
                 <b>Unit 5: Your Game!</b> tasks students with developing a full
                 game of their choice using all of the skills they have developed
@@ -78,6 +78,12 @@ export default function Classes(props) {
               </li>
             </ul>
           </ul>
+          <Button
+            label="Check out my Intro to Coding class!"
+            method={() => {
+              window.open("http://introtocoding.onrender.com", "_blank");
+            }}
+          />
         </>
       );
     }
