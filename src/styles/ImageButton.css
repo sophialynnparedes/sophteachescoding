@@ -10,6 +10,7 @@
     box-shadow: 4px 4px 4px 1px rgba(0,0,0,0.5);
     border: 0;
     margin-bottom:10px;
+    cursor: pointer;
 }
 
 #icon.imageButton{
@@ -36,12 +37,6 @@
     transform: scale(0.9,0.9);
     transition: linear 2s;
 }
-
-
-
-
-
-
 
 .imageButton img{
     position: absolute;
