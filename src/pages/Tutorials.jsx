@@ -12,13 +12,22 @@ export default function Tutorials() {
       <Row align="center">
         <Col align="center" width="45%">
           <Title subtitle="Choose a Topic:" />
-          <Button
-            image="html.png"
-            id="icon"
-            method={() => {
-              setTopic(1);
-            }}
-          />
+          <Row align="spaced">
+            <Button
+              image="html.png"
+              id="icon"
+              method={() => {
+                setTopic(1);
+              }}
+            />
+            <Button
+              image="css.webp"
+              id="icon"
+              method={() => {
+                setTopic(2);
+              }}
+            />
+          </Row>
         </Col>
         <Col align="center" width="45%"></Col>
       </Row>

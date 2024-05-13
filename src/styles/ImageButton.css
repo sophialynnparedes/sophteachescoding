@@ -11,6 +11,7 @@
     border: 0;
     margin-bottom:10px;
     cursor: pointer;
+    background-color: white;
 }
 
 #icon.imageButton{
