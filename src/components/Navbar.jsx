@@ -9,35 +9,27 @@ export default function Navbar() {
     <div className="navbar">
       <Button
         label="About Me"
-        selected={selected == 2}
+        selected={selected == 0}
         method={() => {
-          setSelected(2);
+          setSelected(0);
         }}
-        href="/about"
+        href="/"
       />
       <Button
         label="My Resume"
-        selected={selected == 5}
+        selected={selected == 1}
         method={() => {
-          setSelected(5);
+          setSelected(1);
         }}
         href="/resume"
       />
       <Button
         label="My Projects"
-        selected={selected == 3}
+        selected={selected == 2}
         method={() => {
-          setSelected(3);
+          setSelected(2);
         }}
         href="/projects"
-      />
-      <Button
-        label="Tutorials"
-        selected={selected == 4}
-        method={() => {
-          setSelected(4);
-        }}
-        href="/tutorials"
       />
     </div>
   );
