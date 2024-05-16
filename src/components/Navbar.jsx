@@ -16,6 +16,14 @@ export default function Navbar() {
         href="/about"
       />
       <Button
+        label="My Resume"
+        selected={selected == 5}
+        method={() => {
+          setSelected(5);
+        }}
+        href="/resume"
+      />
+      <Button
         label="My Projects"
         selected={selected == 3}
         method={() => {
@@ -30,14 +38,6 @@ export default function Navbar() {
           setSelected(4);
         }}
         href="/tutorials"
-      />
-      <Button
-        label="HS Classes"
-        selected={selected == 1}
-        method={() => {
-          setSelected(1);
-        }}
-        href="/classes"
       />
     </div>
   );
